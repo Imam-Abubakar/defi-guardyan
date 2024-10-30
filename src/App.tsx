@@ -70,10 +70,15 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
+    <div className="flex flex-col items-center justify-center bg-gray-100 p-4">
       <h1 className="text-2xl font-bold mb-4">DeFi Guardyan</h1>
-      <div className="w-full max-w-md bg-white p-4 rounded shadow">
+      <div className="w-full bg-white p-4 rounded shadow">
         <div className="flex mb-4">
+        <button
+            className="bg-black text-white px-4 py-2 rounded ml-2"
+          >
+            Connect Wallet
+          </button>
           <input
             type="text"
             placeholder="Enter wallet address"
