@@ -25,7 +25,7 @@ export const fetchTokenBalances = async (
       (token: any) => ({
         name: token.name,
         symbol: token.symbol,
-        balance: token.balance / 10 ** token.decimals,
+        balance: token.totalBalance / 10 ** token.decimals,
         decimals: token.decimals,
       })
     );
